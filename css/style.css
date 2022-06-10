@@ -26,21 +26,57 @@
 
 .container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding-inline: 13.5rem;
   gap: 3rem;
   padding-bottom: 6rem;
   padding-top: 6rem;
 }
 
+header {
+  /* position: fixed;  */
+  width: 100vw;
+  background-color: var(--purple-bg);
+}
+
+header .container {
+  align-items: center;
+  
+}
+
+ul.nav {
+  display: flex;
+  gap: 2rem;
+  color: var(--light-purple);
+  margin-inline: 12rem;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+input {
+  margin: 0;
+  border: none;
+  background: var(--dark-bg);
+  height: 4.4rem;
+  width: 30rem;
+  padding-left: 2.6rem;
+  font-weight: bold;
+  color: var(--white);
+}
+
+button {
+  border: none;
+  background-color: var(--button-bg);
+  height: 4.4rem;
+  width: 4.4rem;
+}
+
 section#home {
   background-color: var(--purple-bg);
   color: var(--light-purple);
   border-bottom: 3px solid var(--green);
-}
-
-#home .container {
-  padding-top: 17.2rem;
 }
 
 #home h1 {
